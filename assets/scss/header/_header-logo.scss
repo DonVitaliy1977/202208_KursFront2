@@ -1,0 +1,35 @@
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 45px 15px;
+
+  color: $color-light;
+
+  &__image {
+    max-width: 400px;
+  }
+  &__title {
+    display: block;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 5px;
+
+    font-family: $font-header;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+  }
+  &__description {
+    display: block;
+
+    margin: 0;
+
+    letter-spacing: 2px;
+
+    font-family: $font-main;
+    font-weight: 700;
+  }
+}

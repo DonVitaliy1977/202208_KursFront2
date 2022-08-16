@@ -318,3 +318,118 @@ template {
 /* sm */
 /* xs */
 /* xx */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+body {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  background-color: #d8b036;
+  background-image: url("../img/global-bg.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  max-width: 1380px;
+  margin: 0 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 7px 7px;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.active .header-menu__link {
+  color: #e12727;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eeeeee;
+  padding: 45px 15px;
+}
+.header-logo__image {
+  max-width: 400px;
+}
+.header-logo__title {
+  display: block;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-family: "Lora", serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.header-logo__description {
+  margin: 0;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 7px 7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header-menu__btn {
+  display: none;
+}
+.header-menu__btn-row {
+  display: none;
+}
+.header-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+.header-menu__item {
+  display: block;
+  color: #eeeeee;
+}
+.header-menu__link {
+  display: block;
+  padding: 10px 15px;
+}
+.header-menu__link:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #e12727;
+  border-radius: 4px;
+}
