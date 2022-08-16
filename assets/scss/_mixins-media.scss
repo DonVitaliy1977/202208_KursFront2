@@ -1,13 +1,70 @@
+// @use "../presets" as *;
+
 $diff: 0.2px;
 
+/* ul */
+@mixin max-ul {
+  @media (min-width: $ul) {
+    @content;
+  }
+}
+
+@mixin ul-min {
+  @media (max-width: ($ul - $diff)) {
+    @content;
+  }
+}
+
+@mixin ul-xl {
+  @media (max-width: ($ul - $diff)) and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin ul-lg {
+  @media (max-width: ($ul - $diff)) and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin ul-md {
+  @media (max-width: ($ul - $diff)) and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin ul-sm {
+  @media (max-width: ($ul - $diff)) and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin ul-xs {
+  @media (max-width: ($ul - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin ul-xx {
+  @media (max-width: ($ul - $diff)) and (min-width: $xx) {
+    @content;
+  }
+}
+
+@mixin ul-ux {
+  @media (max-width: ($ul - $diff)) and (min-width: $ux) {
+    @content;
+  }
+}
+
 /* xl */
-@mixin xl-min {
+@mixin max-xl {
   @media (min-width: $xl) {
     @content;
   }
 }
 
-@mixin xl {
+@mixin xl-min {
   @media (max-width: ($xl - $diff)) {
     @content;
   }
@@ -50,13 +107,13 @@ $diff: 0.2px;
 }
 
 /* lg */
-@mixin lg-min {
+@mixin max-lg {
   @media (min-width: $lg) {
     @content;
   }
 }
 
-@mixin lg {
+@mixin lg-min {
   @media (max-width: ($lg - $diff)) {
     @content;
   }
@@ -93,13 +150,13 @@ $diff: 0.2px;
 }
 
 /* md */
-@mixin md-min {
+@mixin max-md {
   @media (min-width: $md) {
     @content;
   }
 }
 
-@mixin md {
+@mixin md-min {
   @media (max-width: ($md - $diff)) {
     @content;
   }
@@ -130,13 +187,13 @@ $diff: 0.2px;
 }
 
 /* sm */
-@mixin sm-min {
+@mixin max-sm {
   @media (min-width: $sm) {
     @content;
   }
 }
 
-@mixin sm {
+@mixin sm-min {
   @media (max-width: ($sm - $diff)) {
     @content;
   }
@@ -161,13 +218,13 @@ $diff: 0.2px;
 }
 
 /* xs */
-@mixin xs-min {
+@mixin max-xs {
   @media (min-width: $xs) {
     @content;
   }
 }
 
-@mixin xs {
+@mixin xs-min {
   @media (max-width: ($xs - $diff)) {
     @content;
   }
@@ -186,13 +243,13 @@ $diff: 0.2px;
 }
 
 /* xx */
-@mixin xx-min {
+@mixin max-xx {
   @media (min-width: $xx) {
     @content;
   }
 }
 
-@mixin xx {
+@mixin xx-min {
   @media (max-width: ($xx - $diff)) {
     @content;
   }
